@@ -241,6 +241,15 @@ public class FileUtilities
         return file;
     }
 
+    /**
+     * Get the resources path
+     * @return
+     */
+    public static String getResourcesPath() {
+        URL url = FileUtilities.class.getResource("/");
+        return url.getPath();
+    }
+
     public static String[] getFirstFiveLinesOfAliceInWonderland()
     {
         String[] stringArray = {

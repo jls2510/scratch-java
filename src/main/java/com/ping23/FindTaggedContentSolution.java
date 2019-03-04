@@ -20,7 +20,7 @@ public class FindTaggedContentSolution
         {
             // Scanner in = new Scanner(INPUT2);
             Scanner in = new Scanner(FileUtilities.getFileFromRelativeFullPath(
-                "/main/java/com/ping23/input.txt"));
+                "/input.txt"));
 
             int testCases = Integer.parseInt(in.nextLine());
             while (in.hasNextLine())

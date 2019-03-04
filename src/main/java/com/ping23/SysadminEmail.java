@@ -2,9 +2,17 @@ package com.ping23;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Properties;
 
 public class SysadminEmail {
+
+    public static void main(String[] args) {
+
+        List<String> sysadmin_emails = Arrays.asList(getSysadminEmails());
+        sysadmin_emails.forEach(email -> System.out.println("email = " + email));
+    }
 
     public static String[] getSysadminEmails() {
 
@@ -14,7 +22,7 @@ public class SysadminEmail {
 
         try {
 
-            String filename = "sysadmin_email.properties";
+            String filename = "/sysadmin_email.properties";
             input = SysadminEmail.class.getResourceAsStream(filename);
             prop.load(input);
 

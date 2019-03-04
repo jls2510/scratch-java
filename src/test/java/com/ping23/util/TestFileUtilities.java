@@ -52,7 +52,7 @@ public class TestFileUtilities
             .println("/TestFileUtilities.testWriteReadToRelativeFullPath()");
 
         // NOTE that the file must already exist in this scenario
-        String relativeFullPath = "/main/java/com/ping23/util/test.txt";
+        String relativeFullPath = "/test.txt";
 
         File testFile = null;
 
@@ -134,17 +134,6 @@ public class TestFileUtilities
         String[] fileLines = FileUtilities.readTextFile(file);
 
         return fileLines;
-
-    }
-
-    public static void main(String[] args)
-    {
-        Result result = JUnitCore.runClasses(TestFileUtilities.class);
-
-        for (Failure failure : result.getFailures())
-        {
-            System.out.println(failure.toString());
-        }
 
     }
 

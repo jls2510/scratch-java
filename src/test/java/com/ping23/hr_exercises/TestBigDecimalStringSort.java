@@ -1,4 +1,4 @@
-package com.ping23;
+package com.ping23.hr_exercises;
 
 import org.junit.Assert;
 import org.junit.Test;

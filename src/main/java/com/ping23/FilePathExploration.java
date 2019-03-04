@@ -25,13 +25,13 @@ public class FilePathExploration {
 
         //String aPath = new File()
 
-        final String absolutePath = new File("/com/ping23/x.txt").getAbsolutePath();
+        final String absolutePath = new File("src/main/resources/x.txt").getAbsolutePath();
         System.out.println("getAbsolutePath() yields: " + absolutePath);
 
-        final String canonicalPath = new File("/com/ping23/x.txt").getCanonicalPath();
+        final String canonicalPath = new File("src/main/resources/x.txt").getCanonicalPath();
         System.out.println("getCanonicalPath() yields: " + canonicalPath);
 
-        final String anotherFilename = "input006.txt";
+        final String anotherFilename = "/input006.txt";
         //anotherFilename = "";
         final URL url = SuperStack.class.getResource(anotherFilename);
         final String absoluteFullPathAnotherFilename = url.getPath();

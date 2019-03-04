@@ -1,12 +1,14 @@
 package com.ping23.commercehub_test;
 
+import com.ping23.util.FileUtilities;
+
 import java.io.*;
 import java.util.*;
 import java.util.regex.*;
 
 public class HostnamesAndTotalRequests
 {
-    private static final String INPUT_1 = "input_log.txt";
+    private static final String INPUT_1 = "/input_log.txt";
 
     public static void main(String[] args) throws IOException
     {
@@ -66,7 +68,8 @@ public class HostnamesAndTotalRequests
         }
 
         // open the output file
-        String outputFilename = user_home + "/" + "records_" + filename;
+        String outputFilename = FileUtilities.getResourcesPath() + "output_log.txt";
+        System.out.println("outputFilename = " + outputFilename);
         File outputFile = new File(outputFilename);
         BufferedWriter writer =
             new BufferedWriter(new FileWriter(outputFile));
