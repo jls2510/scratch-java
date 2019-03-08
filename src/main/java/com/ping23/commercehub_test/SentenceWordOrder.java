@@ -106,6 +106,8 @@ public class SentenceWordOrder
     }
 
     private static final String INPUT_1 =
-        "The lines are printed in reverse order.";
+        "The words in this sentence will be printed in the order of increasing word length.";
 
+    private static final String INPUT_2 =
+            "The lines are printed in reverse order.";
 }

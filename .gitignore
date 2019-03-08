@@ -10,6 +10,10 @@
 # other ide stuff
 .pydevproject
 
+# local gradle stuff
+.gradle
+gradle
+
 # build artifacts
 [Bb]uild/**
 [Bb]in/**

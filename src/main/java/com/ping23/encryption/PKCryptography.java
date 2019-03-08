@@ -24,6 +24,7 @@ import org.apache.commons.codec.binary.Base64;
 
 public class PKCryptography {
     private Cipher cipher;
+    public final static String RESOURCES_DIR = "src/main/resources";
 
     public PKCryptography() throws NoSuchAlgorithmException, NoSuchPaddingException {
         this.cipher = Cipher.getInstance("RSA");
@@ -90,8 +91,8 @@ public class PKCryptography {
 
     public static void main(String[] args) throws Exception {
         PKCryptography ac = new PKCryptography();
-        PrivateKey privateKey = ac.getPrivate("KeyPair/privateKey");
-        PublicKey publicKey = ac.getPublic("KeyPair/publicKey");
+        PrivateKey privateKey = ac.getPrivate(RESOURCES_DIR + "/KeyPair/privateKey");
+        PublicKey publicKey = ac.getPublic(RESOURCES_DIR + "/KeyPair/publicKey");
 
         String msg = "Cryptography is fun!";
         String encrypted_msg = ac.encryptText(msg, privateKey);
@@ -100,11 +101,11 @@ public class PKCryptography {
             "\nEncrypted Message: " + encrypted_msg
             + "\nDecrypted Message: " + decrypted_msg);
 
-        if (new File("KeyPair/text.txt").exists()) {
-            ac.encryptFile(ac.getFileInBytes(new File("KeyPair/text.txt")), 
-                new File("KeyPair/text_encrypted.txt"),privateKey);
-            ac.decryptFile(ac.getFileInBytes(new File("KeyPair/text_encrypted.txt")),
-                new File("KeyPair/text_decrypted.txt"), publicKey);
+        if (new File(RESOURCES_DIR + "/KeyPair/text.txt").exists()) {
+            ac.encryptFile(ac.getFileInBytes(new File(RESOURCES_DIR + "/KeyPair/text.txt")),
+                new File(RESOURCES_DIR + "/KeyPair/text_encrypted.txt"),privateKey);
+            ac.decryptFile(ac.getFileInBytes(new File(RESOURCES_DIR + "/KeyPair/text_encrypted.txt")),
+                new File(RESOURCES_DIR + "/KeyPair/text_decrypted.txt"), publicKey);
         } else {
             System.out.println("Create a file text.txt under folder KeyPair");
         }

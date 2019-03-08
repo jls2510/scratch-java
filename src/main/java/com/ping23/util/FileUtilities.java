@@ -47,7 +47,7 @@ public class FileUtilities
 
     /**
      * append the given string to the end of the given text file
-     * @param filePath is the ABSOLUTE path to the file
+     * @param file is File object
      * @param lineOfText
      */
     public static boolean appendToTextFile(File file, String lineOfText)
@@ -63,7 +63,7 @@ public class FileUtilities
 
     /**
      * overwrite the given string to the beginning of the given text file
-     * @param filePath is the ABSOLUTE path to the file
+     * @param file is File object
      * @param lineOfText
      */
     public static boolean overwriteToTextFile(File file, String lineOfText)
@@ -111,7 +111,7 @@ public class FileUtilities
 
     /**
      * write to file
-     * @param filePath is the ABSOLUTE path to the file
+     * @param file is File object
      * @param lineOfText
      * @param shouldAppend
      */
@@ -142,8 +142,8 @@ public class FileUtilities
 
     /**
      * write multiple lines to file
-     * @param filePath is the ABSOLUTE path to the file
-     * @param lineOfText
+     * @param file is File object
+     * @param linesOfText
      * @param shouldAppend
      */
     public static boolean writeLinesToTextFile(File file, String[] linesOfText,

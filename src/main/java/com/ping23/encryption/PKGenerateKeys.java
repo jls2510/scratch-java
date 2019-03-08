@@ -16,6 +16,7 @@ public class PKGenerateKeys {
     private KeyPair pair;
     private PrivateKey privateKey;
     private PublicKey publicKey;
+    public final static String RESOURCES_DIR = "src/main/resources";
 
     public PKGenerateKeys(int keylength) throws NoSuchAlgorithmException, NoSuchProviderException {
         this.keyGen = KeyPairGenerator.getInstance("RSA");
@@ -51,8 +52,8 @@ public class PKGenerateKeys {
         try {
             gk = new PKGenerateKeys(4096);
             gk.createKeys();
-            gk.writeToFile("KeyPair/publicKey", gk.getPublicKey().getEncoded());
-            gk.writeToFile("KeyPair/privateKey", gk.getPrivateKey().getEncoded());
+            gk.writeToFile(RESOURCES_DIR + "/KeyPair/publicKey", gk.getPublicKey().getEncoded());
+            gk.writeToFile(RESOURCES_DIR + "/KeyPair/privateKey", gk.getPrivateKey().getEncoded());
         } catch (NoSuchAlgorithmException | NoSuchProviderException e) {
             System.err.println(e.getMessage());
         } catch (IOException e) {

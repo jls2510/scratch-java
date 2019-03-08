@@ -31,11 +31,14 @@ public class FilePathExploration {
         final String canonicalPath = new File("src/main/resources/x.txt").getCanonicalPath();
         System.out.println("getCanonicalPath() yields: " + canonicalPath);
 
-        final String anotherFilename = "/input006.txt";
-        //anotherFilename = "";
-        final URL url = SuperStack.class.getResource(anotherFilename);
-        final String absoluteFullPathAnotherFilename = url.getPath();
-        System.out.println("absoluteFullPathAnotherFilename = " + absoluteFullPathAnotherFilename);
+        final URL rootUrl = FilePathExploration.class.getResource("");
+        System.out.println("rootUrl path = " + rootUrl.getPath());
+
+//        final String anotherFilename = "/input006.txt";
+//        //anotherFilename = "";
+//        final URL url = FilePathExploration.class.getResource(anotherFilename);
+//        final String absoluteFullPathAnotherFilename = url.getPath();
+//        System.out.println("absoluteFullPathAnotherFilename = " + absoluteFullPathAnotherFilename);
 
     }
 }

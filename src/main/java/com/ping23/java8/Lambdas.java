@@ -32,10 +32,10 @@ public class Lambdas {
 
         // lambda expression to implement interface. This interface
         // by default implements abstractFunction()
-        MyFunctionalInterface myFunctionalInterface = (String label, int anInt)->System.out.println(label + 2*anInt);
+        MyFunctionalInterface myFunctionalInterfaceImpl = (String label, int anInt)->System.out.println(label + 2*anInt);
 
         // This calls above lambda expression and prints 10.
-        myFunctionalInterface.abstractFunction("result = ", 5);
+        myFunctionalInterfaceImpl.abstractFunction("result = ", 5);
 
     }
 

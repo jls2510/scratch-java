@@ -17,7 +17,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 public class PemReadMain {
  
     
-    public final static String RESOURCES_DIR = "src/main/resources/rsa-sample/";
+    public final static String RESOURCES_DIR = "src/main/resources";
  
     public static void main(String[] args) throws FileNotFoundException, IOException, NoSuchAlgorithmException, NoSuchProviderException {
         Security.addProvider(new BouncyCastleProvider());
@@ -25,11 +25,11 @@ public class PemReadMain {
  
         KeyFactory factory = KeyFactory.getInstance("RSA", "BC");
         try {
-            PrivateKey priv = generatePrivateKey(factory, RESOURCES_DIR + "id_rsa");
+            PrivateKey priv = generatePrivateKey(factory, RESOURCES_DIR + "/rsa-sample/id_rsa");
             System.out.println(String.format("Instantiated private key: %s", priv));
             
             //PublicKey pub = generatePublicKey(factory, RESOURCES_DIR + "id_rsa.pub");
-            PublicKey pub = generatePublicKey(factory, RESOURCES_DIR + "win_public_key.txt");
+            PublicKey pub = generatePublicKey(factory, RESOURCES_DIR + "/rsa-sample/win_public_key.txt");
             System.out.println(String.format("Instantiated public key: %s", pub));
         } catch (InvalidKeySpecException e) {
             e.printStackTrace();
