@@ -11,12 +11,18 @@ public class BinarySearchExercise {
 			searchableArray[index] = index;
 		}
 
-		int valueToSearchFor = 33110;
-		System.out.println("index of " + valueToSearchFor + " = " + searchRecursivelyFor(valueToSearchFor, searchableArray));
+		//int valueToSearchFor = 33110;
+
+		int valueToSearchFor = (int) (Math.random() * 100000);
+		//int searchReturnValue = searchRecursivelyFor(valueToSearchFor, searchableArray);
+		int searchReturnValue = searchFor(valueToSearchFor, searchableArray);
+
+		System.out.println("index of " + valueToSearchFor + " = " + searchReturnValue);
 		System.out.println("counter = " + counter);
 
 	}
 
+	// non-recursive search (same strategy)
 	private static int searchFor(int target, int[] arrayToSearch) {
 
 		int lowerBound = 0;
@@ -24,14 +30,12 @@ public class BinarySearchExercise {
 		int medianIndex = -1;
 		int medianValue = -1;
 
-		int loopCounter = 0;
-
-		while (lowerBound < upperBound && loopCounter <= 500) {
-			++loopCounter;
+		while (lowerBound < upperBound && counter <= 500) {
+			++counter;
 			medianIndex = lowerBound + ((upperBound - lowerBound) / 2);
 			medianValue = arrayToSearch[medianIndex];
 
-			System.out.println("looping: loopCounter = " + loopCounter + "; lowerBound = " + lowerBound
+			System.out.println("looping: loopCounter = " + counter + "; lowerBound = " + lowerBound
 					+ "; upperBound = " + upperBound);
 			System.out.println("medianIndex = " + medianIndex + "; medianValue = " + medianValue);
 

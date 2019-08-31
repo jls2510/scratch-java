@@ -39,13 +39,16 @@ public class BubbleSort
     public static int[] bubbleSort(int[] array) {
         
         boolean swapped = true;
-        int stopper = 0;
+        int upperBound = array.length - 1;
         int tmp;
-        
+
+        // continue until no more swaps occur
         while (swapped) {
             swapped = false;
-            stopper++;
-            for (int index = 0; index < array.length - stopper; index++) {
+
+            // move forwards thru the array
+            for (int index = 0; index < upperBound; index++) {
+                // move largest value to end of array
                 if (array[index] > array[index + 1]) {
                     tmp = array[index];
                     array[index] = array[index + 1];
@@ -57,6 +60,10 @@ public class BubbleSort
                     unswappedCounter++;
                 }
             } // for
+
+            // decrement upperBound: work backwards from end of array
+            upperBound--;
+
         } // while
         
         return array;

@@ -87,7 +87,8 @@ public class TestFileUtilities
         System.out
             .println("TestFileUtilities.testWriteReadToAbsoluteFullPath()");
 
-        String absoluteFullPath = "C:/Users/jls/TestFileUtilities/test.txt";
+        //String absoluteFullPath = "C:/Users/jls/TestFileUtilities/test.txt";
+        String absoluteFullPath = System.getProperties().getProperty("user.dir") + "/test.txt";
 
         // note that the file must already exist
         File testFile =
