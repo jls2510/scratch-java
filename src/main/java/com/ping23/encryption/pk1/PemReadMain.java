@@ -1,4 +1,4 @@
-package com.ping23.encryption;
+package com.ping23.encryption.pk1;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
