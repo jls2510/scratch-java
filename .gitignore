@@ -7,12 +7,8 @@
 # intellij idea stuff
 .idea
 
-# other ide stuff
-.pydevproject
-
 # local gradle stuff
 .gradle
-gradle
 
 # build artifacts
 [Bb]uild/**
@@ -25,5 +21,4 @@ gradle
 
 # file types
 *.lnk
-
-/build/
+*.log
