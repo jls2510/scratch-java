@@ -1,4 +1,4 @@
-package com.ping23.util;
+package com.ping23.scratch.util;
 
 import static org.junit.Assert.*;
 

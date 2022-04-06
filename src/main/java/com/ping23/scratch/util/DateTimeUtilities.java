@@ -1,4 +1,4 @@
-package com.ping23.util;
+package com.ping23.scratch.util;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
