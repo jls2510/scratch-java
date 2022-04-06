@@ -22,3 +22,4 @@
 # file types
 *.lnk
 *.log
+/build/
