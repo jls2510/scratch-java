@@ -9,10 +9,18 @@ public class GsonImmutable {
         System.out.println("hello");
         
         /**
-         * This demostrates Gson's ability to deserialize into an immutable class
+         * This demostrates Gson's ability to deserialize into an immutable class with a parameterized constructor
          */
-        ImmutableClass one = new Gson().fromJson(ImmutableClass.JSON_ONE, ImmutableClass.class);
+        ImmutableClassOne one = new Gson().fromJson(ImmutableClassOne.JSON_ONE, ImmutableClassOne.class);
         System.out.println("instance one: " + one.toString());
+        
+        
+        /**
+         * This demostrates Gson's ability to deserialize into an immutable class with a default constructor
+         * The deserialized values will overwrite the default values
+         */
+        ImmutableClassOne two = new Gson().fromJson(ImmutableClassTwo.JSON_TWO, ImmutableClassOne.class);
+        System.out.println("instance two: " + two.toString());
     }
 
 }

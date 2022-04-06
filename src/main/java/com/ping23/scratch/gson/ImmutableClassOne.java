@@ -1,6 +1,6 @@
 package com.ping23.scratch.gson;
 
-public final class ImmutableClass {
+public final class ImmutableClassOne {
     
     public static final String JSON_ONE = "{"
             + "name: \"One\","
@@ -18,7 +18,7 @@ public final class ImmutableClass {
     private final boolean clean;
     private final Boolean ready;
     
-    private ImmutableClass(String name, int code, String message, Integer count, boolean clean, Boolean ready) {
+    private ImmutableClassOne(String name, int code, String message, Integer count, boolean clean, Boolean ready) {
         this.name = name;
         this.code = code;
         this.message = message;
