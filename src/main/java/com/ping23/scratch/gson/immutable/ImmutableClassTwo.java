@@ -1,4 +1,4 @@
-package com.ping23.scratch.gson;
+package com.ping23.scratch.gson.immutable;
 
 public final class ImmutableClassTwo {
     

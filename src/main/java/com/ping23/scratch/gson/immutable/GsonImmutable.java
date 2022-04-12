@@ -1,4 +1,4 @@
-package com.ping23.scratch.gson;
+package com.ping23.scratch.gson.immutable;
 
 import com.google.gson.Gson;
 
@@ -6,7 +6,7 @@ public class GsonImmutable {
     
     public static void main(String[] args) {
 
-        System.out.println("hello");
+        System.out.println("GsonImmutable");
         
         /**
          * This demostrates Gson's ability to deserialize into an immutable class with a parameterized constructor
