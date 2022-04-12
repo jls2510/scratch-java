@@ -29,6 +29,11 @@ public class GsonDeserializeCollection {
         List<TemplateEntity> templateEntities = new Gson().fromJson(ExampleJsonResponses.LIST, collectionType);
         System.out.println("result: " + templateEntities);
 
+        System.out.println("\ndeserialize LIST into TemplateDescriptors");
+        Type collectionType2 = new TypeToken<List<TemplateDescriptor>>(){}.getType();
+        List<TemplateDescriptor> templateDescriptors = new Gson().fromJson(ExampleJsonResponses.LIST, collectionType2);
+        System.out.println("result: " + templateDescriptors);
+
     }
 
 }
