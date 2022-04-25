@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE webscheduler-update SYSTEM "webscheduler-update.dtd">
+
+<webscheduler-update source="webSchedClient">
+
+  <!-- valid actions are create-or-update, reconcile-daypart and delete -->
+  <action>create-or-update</action>
+
+  <!-- this section navigates to the appropriate show (if it exists) -->
+  <network>NBC</network>
+  <time-range><singleton-date>20350923</singleton-date></time-range>
+
+  <match-rule match="child" >
+        <binding role="Event Title">PRIMETIME 02</binding>
+  </match-rule>
+  <match-rule match="child" >
+        <binding role="Event Title">Show 1113</binding>
+  </match-rule>
+
+
+  <!-- this section describes the structure of the show-->
+
+  <event class-name="Show"  duration="01:00:00:00" overrun="00:00:00:00" external-id="13387547" >
+    <binding role="Nielsen Name" >Show 1113</binding>
+    <binding role="Basis Number" >1113</binding>
+    <binding role="Traffic Show ID" >13385579</binding>
+    <binding role="Display Name" >Show 1113</binding>
+    <binding role="Event Title" >Show 1113</binding>
+    <binding role="Basis Alt Number" >03</binding>
+    <binding role="Day_Part" >DT</binding>
+    <binding role="Event Code" ></binding>
+    <binding role="Network" >1</binding>
+    <binding role="Season Code" >13</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="13387548" >
+    <binding role="GPI Group Name" >SCTE Program Start</binding>
+    <binding role="Event Title" >SCTE Program Start</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="13387549" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Title" >70</binding>
+    <binding role="GPI Resource Name" >70</binding>
+    </event>
+    </event>
+  </event>
+
+
+</webscheduler-update>

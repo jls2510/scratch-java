@@ -32,12 +32,14 @@ dependencies {
     
     implementation 'com.google.code.gson:gson:2.8.2'
     
+	implementation group: 'xerces', name: 'xerces', version: '2.4.0'
+
     implementation 'commons-codec:commons-codec:1.11'
     
     implementation 'org.bouncycastle:bcprov-jdk15on:1.51'
     
-    implementation 'log4j:log4j:1.2.17'
-    
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.10'
+
     implementation 'net.sf.ucanaccess:ucanaccess:4.0.4'
     
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.71'

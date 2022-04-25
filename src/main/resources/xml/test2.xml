@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE webscheduler-update SYSTEM "webscheduler-update.dtd">
+
+<webscheduler-update source="webSchedClient">
+
+  <!-- valid actions are create-or-update, reconcile-daypart and delete -->
+  <action>create-or-update</action>
+
+  <!-- this section navigates to the appropriate show (if it exists) -->
+  <network>NBC</network>
+  <time-range><singleton-date>20350923</singleton-date></time-range>
+
+  <match-rule match="child" >
+        <binding role="Event Title">EARLY TODAY</binding>
+  </match-rule>
+  <match-rule match="child" >
+        <binding role="Event Title">Clearance NOT NEEDED</binding>
+  </match-rule>
+
+
+  <!-- this section describes the structure of the show-->
+
+  <event class-name="Show"  duration="00:30:00:00" overrun="00:00:00:00" external-id="4412950" >
+    <binding role="Display Name" >Clearance NOT NEEDED</binding>
+    <binding role="Event Title" >Clearance NOT NEEDED</binding>
+    <binding role="TMS ID" >TMSID0001</binding>
+    <binding role="Day_Part" >DT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Season Code" >10</binding>
+    <binding role="Nielsen Name" >Clearance NOT NEEDED</binding>
+    <binding role="Basis Number" >1029</binding>
+    <binding role="Traffic Show ID" >4412750</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Basis Alt Number" >02</binding>
+    <binding role="Event Code" >SH</binding>
+    <event class-name="Segment"  duration="00:30:00:00" overrun="00:00:00:00"  external-id="17435948" >
+    <binding role="Event Title" >Segment</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="TimeCode" >00300000</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="LongFormMaterial_ID" >LFMATID0001</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="17436052" >
+    <binding role="GPI Group Name" >Program Start</binding>
+    <binding role="Event Title" >Program Start</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="17436053" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Title" >ProgramStart</binding>
+    <binding role="GPI Resource Name" >ProgramStart</binding>
+    </event>
+    </event>
+  </event>
+
+
+</webscheduler-update>

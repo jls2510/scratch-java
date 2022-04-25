@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+  <!-- times are GMT
+       singleton-date is in YYYYMMDD format, where MM is 01-12 and DD is 01-31
+       duration and relative-start-time are offset times i.e. hh:mm:ss:ff
+       action is one of create-or-update, delete, reconcile-daypart, reconcile-day
+       reconcile-day finds all the dayparts that meet the criteria, and assumes
+       that all the shows have been provided
+       (reconcile-daypart is used to look for necessary deletes of shows)
+  -->
+
+   <!ELEMENT webscheduler-update (action, network, time-range, match-rule*, event-list?, event?, hardware*)>
+   <!ELEMENT action (#PCDATA)>
+   <!ELEMENT network (#PCDATA)>
+   <!ELEMENT time-range (singleton-date)>
+   <!ELEMENT singleton-date (#PCDATA)>
+   <!ELEMENT match-rule (binding*)>
+
+   <!ATTLIST webscheduler-update
+        source CDATA #IMPLIED >
+
+   <!-- event-list shows the complete list of shows for reconcile-daypart
+        it also can serve as a "position-after" element for create-or-update
+   -->
+   <!ELEMENT event-list (match-rule*)>
+   <!ELEMENT event (binding*, event*)>
+   <!ELEMENT binding (#PCDATA)>
+   <!ELEMENT hardware ((facility | playback | record | dup-channel), binding*)>
+   <!ELEMENT facility (#PCDATA)>
+   <!ELEMENT playback (singleton-date, match-rule*)>
+   <!ELEMENT record (EMPTY)>
+   <!ELEMENT dup-channel (#PCDATA)>
+
+  <!--I made duration optional for tied events -->
+
+  <!-- start-time (a frame time ALWAYS WITH a time zone) is used only to position the show element in the daypart;
+       relative-start-time is what you want otherwise if you need a start time
+       GPI type preserves the SMPTE GPI resource name for use in structural transformations
+       debug-context is used e.g. to remember which SMPTE event produced this webscheduler event
+       -->
+   <!ATTLIST event
+        class-name CDATA #REQUIRED
+        duration CDATA #IMPLIED
+        relative-start-time CDATA #IMPLIED
+        overrun CDATA #IMPLIED
+        external-id CDATA #IMPLIED
+        start-time CDATA #IMPLIED
+        gpi-type CDATA #IMPLIED
+        primary-event-id CDATA #IMPLIED
+        debug-context CDATA #IMPLIED>
+   <!ATTLIST binding role CDATA #REQUIRED purpose CDATA #IMPLIED >
+   <!--  time does a match on a container's time range and looks for a binding (you can use
+         the "magic value" null )-->
+   <!--  start-time is in a standard frame-time format "mm/dd/yyyy hh:mm:ss:ff zz"    -->
+   <!ATTLIST match-rule
+        match (eventid|child|clone|contingency|time|billingReference|basisNumber) #REQUIRED
+        start-time CDATA #IMPLIED >
+   <!ATTLIST record breakin (pre|post) #REQUIRED >
+   <!ATTLIST dup-channel breakin (pre|post) #REQUIRED >
+
