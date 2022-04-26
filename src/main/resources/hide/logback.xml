@@ -23,12 +23,12 @@
 
     <logger name="com.ping23.scratch" level="DEBUG" additivity="false">
         <appender-ref ref="ConsoleAppender"/>
-        <appender-ref ref="FileAppender"/>
+        <!-- <appender-ref ref="FileAppender"/> -->
     </logger>
 
     <root level="DEBUG">
         <appender-ref ref="ConsoleAppender"/>
-        <appender-ref ref="FileAppender"/>
+        <!-- <appender-ref ref="FileAppender"/> -->
     </root>
 
 </configuration>
