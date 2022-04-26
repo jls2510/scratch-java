@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<webscheduler-update x="y">
+
+	<action>create-or-update</action>
+
+	<network>NBC</network>
+  <time-range><singleton-date>20350923</singleton-date></time-range>
+
+
+	<to>Tove</to>
+	<from>Jani</from>
+	<heading>Reminder</heading>
+	<body>Don't forget me this weekend!</body>
+
+</webscheduler-update>

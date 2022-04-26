@@ -1,27 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE webscheduler-update SYSTEM "webscheduler-update.dtd">
 
 <webscheduler-update source="webSchedClient">
 
-  <!-- valid actions are create-or-update, reconcile-daypart and delete -->
-  <action>create-or-update</action>
-
-  <!-- this section navigates to the appropriate show (if it exists) -->
   <network>NBC</network>
-  <time-range><singleton-date>20350923</singleton-date></time-range>
-
-  <match-rule match="child" >
-        <binding role="Event Title">PRIMETIME 02</binding>
-  </match-rule>
-  <match-rule match="child" >
-        <binding role="Event Title">Show 1113</binding>
-  </match-rule>
-
-
-  <!-- this section describes the structure of the show-->
-
-  <event class-name="Show"  duration="01:00:00:00" overrun="00:00:00:00" external-id="13387547" >
-  </event>
-
-
 </webscheduler-update>
