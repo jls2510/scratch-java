@@ -42,7 +42,7 @@ public class PollingExecutor {
         // Fire off monitor thread
         Timer timer = new Timer("PollingTask");
         PollingTask pollingTask = new PollingTask(timer, pollingCondition);
-        timer.schedule(pollingTask, 1000, 1000);
+        timer.schedule(pollingTask, 0, 1000);
         System.out.println("startPolling() finished");
     }
     

@@ -20,7 +20,7 @@ public class PollingTask extends TimerTask {
     private static final int POLLING_DELAY_INCREMENT = 1000;
     
     private static Timer timer;
-    private static int pollingCondition = 10;
+    private static int pollingCondition = PollingTarget.MAX_VALUE;
 
     private static int pollingDelay = 0;
     private static long lastPoll = 0;

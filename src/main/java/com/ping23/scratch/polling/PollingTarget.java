@@ -8,7 +8,7 @@ package com.ping23.scratch.polling;
  */
 public class PollingTarget {
 
-    private static final int MAX_VALUE = 10;
+    public static final int MAX_VALUE = 10;
 
     private static int targetValue = 0;
 
