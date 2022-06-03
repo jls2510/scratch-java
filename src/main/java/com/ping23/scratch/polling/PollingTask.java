@@ -18,24 +18,27 @@ public class PollingTask extends TimerTask {
     private static final int MAX_POLLING_DELAY = 300000;
     private static final int POLLING_DELAY_INCREMENT = 1000;
 
-    private static int pollingCondition = PollingTarget.MAX_VALUE;
-
-    private static int pollingDelay = 0;
-    private static long lastPoll = 0;
-
-    /**
-     * Constructor
-     */
-    public PollingTask(int pollingCondition) {
-        PollingTask.pollingCondition = pollingCondition;
-    }
+    /** define the condition to be met to satisfy polling operation */
+    private static final int POLLING_CONDITION = 5;
+    
+    private static int pollingDelay = POLLING_DELAY_INCREMENT;
+    private static long lastPollTime = 0;
 
     /** run */
     public void run() {
 
         // check the polling condition if we're past the current delay
         final long now = new Date().getTime();
-        if (lastPoll + pollingDelay <= now || lastPoll + MAX_POLLING_DELAY <= now) {
+
+        // first time through
+        if (lastPollTime == 0) {
+            lastPollTime = now;
+            return;
+        }
+
+        System.out.println("pollingDelay: " + pollingDelay);
+
+        if (lastPollTime + pollingDelay <= now || lastPollTime + MAX_POLLING_DELAY <= now) {
 
             // reset count
             PollingExecutor.setCount(0);
@@ -43,20 +46,25 @@ public class PollingTask extends TimerTask {
             Integer pollingTargetValue = PollingTarget.getCurrentTargetValue();
             System.out.println("Polling condition target value: " + pollingTargetValue);
 
-            if (pollingTargetValue >= pollingCondition) {
+            if (pollingTargetValue >= POLLING_CONDITION) {
                 System.out.println("Polling condition satisfied; cancelling.");
-                PollingExecutor.setConditionSatisfied(Boolean.TRUE);
-                PollingExecutor.cancelPolling();
+
+                // reset control values
+                pollingDelay = POLLING_DELAY_INCREMENT;
+                lastPollTime = 0;
+
+                // indicate to caller that condition is satisfied
+                // this also cancels the polling operation
+                PollingExecutor.conditionSatisfied();
+                
+            } else {
+                // record last polling time
+                lastPollTime = now;
+                // increase polling delay by POLLING_DELAY_INCREMENT, up to max
+                pollingDelay += pollingDelay < MAX_POLLING_DELAY ? POLLING_DELAY_INCREMENT : 0;
             }
 
-            // record last polling time
-            lastPoll = now;
-            // increase polling delay by POLLING_DELAY_INCREMENT, up to max
-            pollingDelay += pollingDelay < MAX_POLLING_DELAY ? POLLING_DELAY_INCREMENT : 0;
-
         }
-
-        // System.out.println("PollingTask.run() returning");
 
     }
 

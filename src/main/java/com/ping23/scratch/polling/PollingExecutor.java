@@ -13,9 +13,6 @@ public class PollingExecutor {
     private static Timer timer;
     private static PollingTask timerTask;
 
-    // what condition are we looking to be satisfied?
-    private static final int POLLING_CONDITION = 5;
-    
     /**
      * main
      */
@@ -44,17 +41,22 @@ public class PollingExecutor {
     private static void startPolling() {
         // Fire off monitor thread
         timer = new Timer("PollingTask");
-        timerTask = new PollingTask(POLLING_CONDITION);
+        timerTask = new PollingTask();
         timer.schedule(timerTask, 0, 1000);
         System.out.println("startPolling() finished");
     }
     
     /**
-     * set conditionSatisfied value
-     * @param conditionSatisfied
+     * What to do when the polling condition is satisfied
+     * 
+     * this also cancels the polling operation
      */
-    protected static void setConditionSatisfied(boolean conditionSatisfied) {
-        PollingExecutor.conditionSatisfied = conditionSatisfied;
+    protected static void conditionSatisfied() {
+        // update the value
+        PollingExecutor.conditionSatisfied = Boolean.TRUE;
+        
+        // cancel the polling operation
+        cancelPolling();
     }
     
     /**
@@ -68,7 +70,7 @@ public class PollingExecutor {
     /**
      * Cancel Polling
      */
-    protected static void cancelPolling() {
+    private static void cancelPolling() {
         if (timerTask != null) {
             System.out.println("Cancelling timerTask");
             timerTask.cancel();
