@@ -1,7 +1,6 @@
 package com.ping23.scratch.polling;
 
 import java.util.Date;
-import java.util.Timer;
 import java.util.TimerTask;
 
 /**
@@ -18,8 +17,7 @@ public class PollingTask extends TimerTask {
 
     private static final int MAX_POLLING_DELAY = 300000;
     private static final int POLLING_DELAY_INCREMENT = 1000;
-    
-    private static Timer timer;
+
     private static int pollingCondition = PollingTarget.MAX_VALUE;
 
     private static int pollingDelay = 0;
@@ -27,11 +25,8 @@ public class PollingTask extends TimerTask {
 
     /**
      * Constructor
-     * 
-     * @param timer
      */
-    public PollingTask(Timer timer, int pollingCondition) {
-        PollingTask.timer = timer;
+    public PollingTask(int pollingCondition) {
         PollingTask.pollingCondition = pollingCondition;
     }
 
@@ -51,7 +46,7 @@ public class PollingTask extends TimerTask {
             if (pollingTargetValue >= pollingCondition) {
                 System.out.println("Polling condition satisfied; cancelling.");
                 PollingExecutor.setConditionSatisfied(Boolean.TRUE);
-                timer.cancel();
+                PollingExecutor.cancelPolling();
             }
 
             // record last polling time
