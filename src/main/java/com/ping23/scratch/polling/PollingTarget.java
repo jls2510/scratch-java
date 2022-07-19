@@ -12,8 +12,11 @@ public class PollingTarget {
 
     private static int targetValue = 0;
 
+    private static int testCounter = 0;
+
     /**
      * Get the current target value
+     * 
      * @return the value
      */
     public static int getCurrentTargetValue() {
@@ -24,4 +27,17 @@ public class PollingTarget {
         return ++targetValue;
     }
 
+    public static boolean requestServiceStatus() {
+        System.out.println("testCounter: " + testCounter);
+        if (testCounter > 4) {
+            testCounter = 0;
+            System.out.println("testCounter > condition, so returning true");
+            return true;
+        } else {
+            testCounter++;
+        }
+
+        return false;
+
+    }
 }
