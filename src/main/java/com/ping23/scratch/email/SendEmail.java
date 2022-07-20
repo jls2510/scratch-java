@@ -11,6 +11,8 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import com.ping23.util.AppProperties;
+
 public class SendEmail {
 
    public static void main(String [] args) {    
@@ -18,27 +20,31 @@ public class SendEmail {
       String to = "jim@ping23.com";
 
       // Sender's email ID needs to be mentioned
-      String from = "jls2510@gmail.com";
+      String from = "jim@ping23.com";
 
       // Assuming you are sending email from localhost
       //String host = "localhost";
-      //String host = "secure.emailsrvr.com";
+      String host = "secure.emailsrvr.com";
+      
+      // starttls enable
+      String starttlsEnable = "false";
+      //String starttlsEnable = "true";
+      
+      // port
+      String port = "25";
 
       // Get system properties
       Properties properties = new Properties();
       properties.put("mail.smtp.auth", true);
-      properties.put("mail.smtp.starttls.enable", "true");
-      properties.put("mail.smtp.host", "smtp.mailtrap.io");
-      properties.put("mail.smtp.port", "2525");
-      properties.put("mail.smtp.ssl.trust", "smtp.mailtrap.io");
+      properties.put("mail.smtp.starttls.enable", starttlsEnable);
+      properties.put("mail.smtp.host", host);
+      properties.put("mail.smtp.port", port);
       
-      // Setup mail server
-      //properties.setProperty("mail.smtp.host", host);
-
-      // Get the default Session object.
-      //Session session = Session.getDefaultInstance(properties);
-      final String username = "a30be067550090";
-      final String password = "c6e8b68637ff5a";
+      // authentication
+      final String username = AppProperties.getProperty("smtp.username");
+      final String password = AppProperties.getProperty("smtp.password");
+      
+      // Session
       Session session = Session.getInstance(properties, new Authenticator() {
           @Override
           protected PasswordAuthentication getPasswordAuthentication() {
