@@ -17,10 +17,11 @@
 [Oo]ut/**
 
 # folders
-/tmp
+tmp
+report
 
 # file types
 *.lnk
 *.log
-/build/
-/target/
+build
+target
