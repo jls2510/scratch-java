@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class AppProperties {
 
-    public static final Properties properties;
+    private static final Properties properties;
     static {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         properties = new Properties();
@@ -21,12 +21,21 @@ public class AppProperties {
     }
     
     /**
-     * Convenience wrapper method
+     * wrapper method
      * @param key
      * @return
      */
     public static String getProperty(final String key) {
-        return properties.getProperty(key);
+        
+        String value = properties.getProperty(key);
+        
+        // dereference environment variables
+        if (value.startsWith("${")) {
+            String envVar = value.replaceAll("\\$", "").replaceAll("\\{", "").replaceAll("\\}", "");
+            value = System.getenv(envVar);
+        }
+        
+        return value;
     }
 
 }
