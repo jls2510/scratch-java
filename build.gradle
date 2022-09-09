@@ -34,9 +34,10 @@ dependencies {
     
     implementation 'com.google.code.gson:gson:2.8.2'
     
-	implementation group: 'xerces', name: 'xerces', version: '2.4.0'
+	implementation group: 'xerces', name: 'xercesImpl', version: '2.12.2'
 
     implementation 'commons-codec:commons-codec:1.11'
+    implementation 'org.apache.commons:commons-lang3:3.9'
     
     implementation 'org.bouncycastle:bcprov-jdk15on:1.51'
     

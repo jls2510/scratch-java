@@ -1,0 +1,2051 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<webscheduler-update source="webSchedClient">
+
+  <!-- valid actions are create-or-update, reconcile-daypart and delete -->
+  <action>create-or-update</action>
+
+  <!-- this section navigates to the appropriate show (if it exists) -->
+  <network>NBC</network>
+  <time-range><singleton-date>20220106</singleton-date></time-range>
+
+  <match-rule match="child" >
+        <binding role="Event Title">LA CASA DE LOS FAMOSOS  (CRK3E)</binding>
+  </match-rule>
+  <match-rule match="child" >
+        <binding role="Event Title">TLMD - LA CASA DE LOS FAMOSOS</binding>
+  </match-rule>
+
+
+  <!-- this section describes the structure of the show-->
+
+  <template class-name="Show"  duration="02:00:00:00" overrun="00:00:00:00" external-id="526486743" >
+    <binding role="Billing Reference Code" >526486743</binding>
+    <binding role="XML Document ID" >1</binding>
+    <binding role="Display Name" >TLMD - LA CASA DE LOS FAMOSOS</binding>
+    <binding role="Event Title" >TLMD - LA CASA DE LOS FAMOSOS</binding>
+    <binding role="SMPTE Document ID" >0</binding>
+    <binding role="TMS ID" >telemundo_EP039529830013</binding>
+    <binding role="Replacement Type" >Identifiers|Triggers</binding>
+    <binding role="Day_Part" >ZZ</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Season Code" >13</binding>
+    <binding role="Episode Name" >TLMD - LA CASA DE LOS FAMOSOS</binding>
+    <binding role="Nielsen Name" >TLMD - LA CASA DE LOS FAMOSOS</binding>
+    <binding role="Basis Number" >9092</binding>
+    <binding role="Traffic Show ID" >019617811</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="XML Start Time" >09/10/2021 23:00:00:00 GMT-00:00</binding>
+    <binding role="Basis Alt Number" >01</binding>
+    <binding role="Program Title" >TLMD - LA CASA DE LOS FAMOSOS</binding>
+    <binding role="Event Code" >SH</binding>
+    <event class-name="NYLive"  duration="00:19:00:00" overrun="00:00:10:00"  external-id="-10001" >
+    <binding role="Billing Reference Code" >-10001</binding>
+    <binding role="Event Title" >NYLive 1</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Still"  duration="00:00:15:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="528263770" >
+    <binding role="Billing Reference Code" >528263770</binding>
+    <binding role="ISCI" >TM18TV14DL</binding>
+    <binding role="Event Title" >TM18TV14DL</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="TiedStill"  duration="00:00:00:00"  relative-start-time="00:00:10:00" external-id="526487013" >
+    <binding role="Billing Reference Code" >526487013</binding>
+    <binding role="ISCI" >TB2999H</binding>
+    <binding role="Graphic Depth" >Background</binding>
+    <binding role="Event Title" >TB2999H</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="End Offset" >60</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="Still"  duration="00:00:05:00" overrun="00:00:00:00" relative-start-time="00:00:17:00" external-id="528261562" >
+    <binding role="Billing Reference Code" >528261562</binding>
+    <binding role="ISCI" >TCC116918</binding>
+    <binding role="Event Title" >TCC116918</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Commercial Pod"  duration="00:03:32:00" overrun="00:00:00:00"  external-id="-10002" >
+    <binding role="Billing Reference Code" >-10002</binding>
+    <binding role="Event Title" >Break 1</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Allocation"  duration="00:02:00:00" overrun="00:00:00:00"  external-id="NAT-0" >
+    <binding role="Billing Reference Code" >NAT-0</binding>
+    <binding role="Event Title" >NAT</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="469962052" >
+    <binding role="Billing Reference Code" >469962052</binding>
+    <binding role="ISCI" >4AMD1781000H</binding>
+    <binding role="Product Name" >Barriers/Pricing (EFU)</binding>
+    <binding role="Event Title" >4AMD1781000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Amazon.com</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="518722639" >
+    <binding role="Billing Reference Code" >518722639</binding>
+    <binding role="ISCI" >GOOG4994000H</binding>
+    <binding role="Product Name" >Google Pixel</binding>
+    <binding role="Event Title" >GOOG4994000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Google, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="514866548" >
+    <binding role="Billing Reference Code" >514866548</binding>
+    <binding role="ISCI" >CIXA1107000H</binding>
+    <binding role="Product Name" >Corona Extra</binding>
+    <binding role="Event Title" >CIXA1107000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Crown Imports, LLC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="510906608" >
+    <binding role="Billing Reference Code" >510906608</binding>
+    <binding role="ISCI" >JJZY0675000H</binding>
+    <binding role="Product Name" >Zyrtec (ZYR)</binding>
+    <binding role="Event Title" >JJZY0675000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Johnson &amp; Johnson</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="520196087" >
+    <binding role="Billing Reference Code" >520196087</binding>
+    <binding role="ISCI" >KLCZ1019000H</binding>
+    <binding role="Product Name" >Cheez-It (HCHZ)</binding>
+    <binding role="Event Title" >KLCZ1019000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Kellogg Company</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="515718606" >
+    <binding role="Billing Reference Code" >515718606</binding>
+    <binding role="ISCI" >YGNI0261000H</binding>
+    <binding role="Product Name" >Smirnoff Ice</binding>
+    <binding role="Event Title" >YGNI0261000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Diageo</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-0" >
+    <binding role="Billing Reference Code" >BL-0</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142583" >
+    <binding role="Billing Reference Code" >527142583</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142583" >
+    <binding role="Billing Reference Code" >GPI-527142583</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:08:00" external-id="527142586" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142586</binding>
+    <binding role="Event Title" >01</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >01</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:01:30:00" overrun="00:00:00:00"  external-id="LOC-0" >
+    <binding role="Billing Reference Code" >LOC-0</binding>
+    <binding role="Event Title" >LOC</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="523652131" >
+    <binding role="Billing Reference Code" >523652131</binding>
+    <binding role="ISCI" >210087ZH</binding>
+    <binding role="Product Name" >Freeway Insurance</binding>
+    <binding role="Event Title" >210087ZH</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Freeway Insurance Services, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="517751768" >
+    <binding role="Billing Reference Code" >517751768</binding>
+    <binding role="ISCI" >LD421BA1930H</binding>
+    <binding role="Product Name" >PI/WC (Est 1891)</binding>
+    <binding role="Event Title" >LD421BA1930H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Los Defensores, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-1" >
+    <binding role="Billing Reference Code" >BL-1</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142598" >
+    <binding role="Billing Reference Code" >527142598</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142598" >
+    <binding role="Billing Reference Code" >GPI-527142598</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:30:03" external-id="527142601" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142601</binding>
+    <binding role="Event Title" >02</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >02</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-GPIGRP" >
+    <binding role="Billing Reference Code" >526486743-GPIGRP</binding>
+    <binding role="GPI Group Name" >Break Start/Stop</binding>
+    <binding role="Event Title" >Break Start/Stop</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Break Start/Stop</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-2" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-2</binding>
+    <binding role="Event Title" >BreakStart</binding>
+    <binding role="GPI Resource Name" >BreakStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-3" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-3</binding>
+    <binding role="Event Title" >BreakStop</binding>
+    <binding role="GPI Resource Name" >BreakStop</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    <event class-name="NYLive"  duration="00:12:00:00" overrun="00:00:10:00"  external-id="-10003" >
+    <binding role="Billing Reference Code" >-10003</binding>
+    <binding role="Event Title" >NYLive 2</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Still"  duration="00:00:15:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="528263770" >
+    <binding role="Billing Reference Code" >528263770</binding>
+    <binding role="ISCI" >TM18TV14DL</binding>
+    <binding role="Event Title" >TM18TV14DL</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="TiedStill"  duration="00:00:00:00"  relative-start-time="00:00:05:00" external-id="526487016" >
+    <binding role="Billing Reference Code" >526487016</binding>
+    <binding role="ISCI" >TB2999H</binding>
+    <binding role="Graphic Depth" >Background</binding>
+    <binding role="Event Title" >TB2999H</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="End Offset" >60</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Commercial Pod"  duration="00:03:41:00" overrun="00:00:00:00"  external-id="-10004" >
+    <binding role="Billing Reference Code" >-10004</binding>
+    <binding role="Event Title" >Break 2</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Allocation"  duration="00:01:30:00" overrun="00:00:00:00"  external-id="NAT-0" >
+    <binding role="Billing Reference Code" >NAT-0</binding>
+    <binding role="Event Title" >NAT</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >NC</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="465439251" >
+    <binding role="Billing Reference Code" >465439251</binding>
+    <binding role="ISCI" >JTMO21T0093H</binding>
+    <binding role="Product Name" >PONA</binding>
+    <binding role="Event Title" >JTMO21T0093H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >T-Mobile USA</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="469725684" >
+    <binding role="Billing Reference Code" >469725684</binding>
+    <binding role="ISCI" >#</binding>
+    <binding role="Product Name" >Wingstop HISP</binding>
+    <binding role="Event Title" >#</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Wingstop Restaurants, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="528269927" >
+    <binding role="Billing Reference Code" >528269927</binding>
+    <binding role="ISCI" >CIVS1075000H</binding>
+    <binding role="Product Name" >PHM</binding>
+    <binding role="Event Title" >CIVS1075000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >CVS Caremark</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-0" >
+    <binding role="Billing Reference Code" >BL-0</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142616" >
+    <binding role="Billing Reference Code" >527142616</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142616" >
+    <binding role="Billing Reference Code" >GPI-527142616</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:08:00" external-id="527142619" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142619</binding>
+    <binding role="Event Title" >01</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >01</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:01:30:00" overrun="00:00:00:00"  external-id="LOC-0" >
+    <binding role="Billing Reference Code" >LOC-0</binding>
+    <binding role="Event Title" >LOC</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="518364939" >
+    <binding role="Billing Reference Code" >518364939</binding>
+    <binding role="ISCI" >NGAK601503H</binding>
+    <binding role="Product Name" >Medicare Advantage</binding>
+    <binding role="Event Title" >NGAK601503H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >TZ Insurance Solutions, LLC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="521649126" >
+    <binding role="Billing Reference Code" >521649126</binding>
+    <binding role="ISCI" >TSLWAR308770</binding>
+    <binding role="Product Name" >Travel (Call Now Spanish 30)</binding>
+    <binding role="Event Title" >TSLWAR308770</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Low Cost Airlines</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-1" >
+    <binding role="Billing Reference Code" >BL-1</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142631" >
+    <binding role="Billing Reference Code" >527142631</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142631" >
+    <binding role="Billing Reference Code" >GPI-527142631</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:30:03" external-id="527142634" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142634</binding>
+    <binding role="Event Title" >02</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >02</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-GPIGRP" >
+    <binding role="Billing Reference Code" >526486743-GPIGRP</binding>
+    <binding role="GPI Group Name" >Break Start/Stop</binding>
+    <binding role="Event Title" >Break Start/Stop</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Break Start/Stop</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-4" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-4</binding>
+    <binding role="Event Title" >BreakStart</binding>
+    <binding role="GPI Resource Name" >BreakStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-5" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-5</binding>
+    <binding role="Event Title" >BreakStop</binding>
+    <binding role="GPI Resource Name" >BreakStop</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    <event class-name="NYLive"  duration="00:12:00:00" overrun="00:00:10:00"  external-id="-10005" >
+    <binding role="Billing Reference Code" >-10005</binding>
+    <binding role="Event Title" >NYLive 3</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Still"  duration="00:00:15:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="528263770" >
+    <binding role="Billing Reference Code" >528263770</binding>
+    <binding role="ISCI" >TM18TV14DL</binding>
+    <binding role="Event Title" >TM18TV14DL</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="TiedStill"  duration="00:00:00:00"  relative-start-time="00:00:05:00" external-id="526487016" >
+    <binding role="Billing Reference Code" >526487016</binding>
+    <binding role="ISCI" >TB2999H</binding>
+    <binding role="Graphic Depth" >Background</binding>
+    <binding role="Event Title" >TB2999H</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="End Offset" >60</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Commercial Pod"  duration="00:04:27:00" overrun="00:00:00:00"  external-id="-10006" >
+    <binding role="Billing Reference Code" >-10006</binding>
+    <binding role="Event Title" >Break 3</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Allocation"  duration="00:02:00:00" overrun="00:00:00:00"  external-id="NAT-0" >
+    <binding role="Billing Reference Code" >NAT-0</binding>
+    <binding role="Event Title" >NAT</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="519005139" >
+    <binding role="Billing Reference Code" >519005139</binding>
+    <binding role="ISCI" >AUSE1018H</binding>
+    <binding role="Product Name" >Bud Light Seltzer</binding>
+    <binding role="Event Title" >AUSE1018H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Anheuser-Busch InBev</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="518642784" >
+    <binding role="Billing Reference Code" >518642784</binding>
+    <binding role="ISCI" >YLCM0120H</binding>
+    <binding role="Product Name" >Little Caesars</binding>
+    <binding role="Event Title" >YLCM0120H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Caesar Fund, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="515546758" >
+    <binding role="Billing Reference Code" >515546758</binding>
+    <binding role="ISCI" >#</binding>
+    <binding role="Event Title" >#</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Microsoft</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="528115394" >
+    <binding role="Billing Reference Code" >528115394</binding>
+    <binding role="ISCI" >OMSP1510000H</binding>
+    <binding role="Product Name" >Superstay Lip Hispanic (M57)</binding>
+    <binding role="Event Title" >OMSP1510000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >L&apos;Oreal USA</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="510904190" >
+    <binding role="Billing Reference Code" >510904190</binding>
+    <binding role="ISCI" >JJTE0174000H</binding>
+    <binding role="Product Name" >Tylenol SCC (EST)</binding>
+    <binding role="Event Title" >JJTE0174000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Johnson &amp; Johnson</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="471689407" >
+    <binding role="Billing Reference Code" >471689407</binding>
+    <binding role="ISCI" >GMLY0001000H</binding>
+    <binding role="Product Name" >Cadillac Lyriq (ELH)</binding>
+    <binding role="Event Title" >GMLY0001000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >General Motors</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:20:00" overrun="00:00:00:00"  external-id="NP-0" >
+    <binding role="Billing Reference Code" >NP-0</binding>
+    <binding role="Event Title" >NP</binding>
+    <binding role="Event Process Type" >PRO</binding>
+    <binding role="Event Code" >NP</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:20:00" overrun="00:00:00:00"  external-id="528584146" >
+    <binding role="Billing Reference Code" >528584146</binding>
+    <binding role="ISCI" >TTL7PE091021H</binding>
+    <binding role="Product Name" >DO NOT COVER TLMD  (04) LTXTTL7PE      FRI  07P</binding>
+    <binding role="Event Title" >TTL7PE091021H</binding>
+    <binding role="Event Process Type" >PRO</binding>
+    <binding role="Alt_ISCI" >TRLG477635H</binding>
+    <binding role="Client Name" >DO NOT COVER TLMD  (04) LTXTTL7PE      FRI  07P</binding>
+    <binding role="Event Code" >NP</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:05:00" overrun="00:00:00:00"  external-id="BB-0" >
+    <binding role="Billing Reference Code" >BB-0</binding>
+    <binding role="Event Title" >BB</binding>
+    <binding role="Event Process Type" >BB</binding>
+    <binding role="Event Code" >BB</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:05:00" overrun="00:00:00:00"  external-id="520888148" >
+    <binding role="Billing Reference Code" >520888148</binding>
+    <binding role="ISCI" >TBB97258H</binding>
+    <binding role="Product Name" >Primetime Pop Culture Brief - BB - Verizon</binding>
+    <binding role="Event Title" >TBB97258H</binding>
+    <binding role="Event Process Type" >BB</binding>
+    <binding role="Client Name" >Verizon</binding>
+    <binding role="Event Code" >BB</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >BB</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="NAT-1" >
+    <binding role="Billing Reference Code" >NAT-1</binding>
+    <binding role="Event Title" >NAT</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="457803214" >
+    <binding role="Billing Reference Code" >457803214</binding>
+    <binding role="ISCI" >YVWC4821000H</binding>
+    <binding role="Product Name" >BH05</binding>
+    <binding role="Event Title" >YVWC4821000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Verizon</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-0" >
+    <binding role="Billing Reference Code" >BL-0</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142652" >
+    <binding role="Billing Reference Code" >527142652</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142652" >
+    <binding role="Billing Reference Code" >GPI-527142652</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:08:00" external-id="527142655" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142655</binding>
+    <binding role="Event Title" >01</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >01</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="LOC-0" >
+    <binding role="Billing Reference Code" >LOC-0</binding>
+    <binding role="Event Title" >LOC</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="517915541" >
+    <binding role="Billing Reference Code" >517915541</binding>
+    <binding role="ISCI" >210087ZH</binding>
+    <binding role="Product Name" >Freeway Insurance</binding>
+    <binding role="Event Title" >210087ZH</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Freeway Insurance Services, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-1" >
+    <binding role="Billing Reference Code" >BL-1</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142664" >
+    <binding role="Billing Reference Code" >527142664</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142664" >
+    <binding role="Billing Reference Code" >GPI-527142664</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="527142667" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142667</binding>
+    <binding role="Event Title" >02</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >02</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="End Offset" >3</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-GPIGRP" >
+    <binding role="Billing Reference Code" >526486743-GPIGRP</binding>
+    <binding role="GPI Group Name" >Break Start/Stop</binding>
+    <binding role="Event Title" >Break Start/Stop</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Break Start/Stop</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-6" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-6</binding>
+    <binding role="Event Title" >BreakStart</binding>
+    <binding role="GPI Resource Name" >BreakStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-7" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-7</binding>
+    <binding role="Event Title" >BreakStop</binding>
+    <binding role="GPI Resource Name" >BreakStop</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    <event class-name="NYLive"  duration="00:12:00:00" overrun="00:00:10:00"  external-id="-10007" >
+    <binding role="Billing Reference Code" >-10007</binding>
+    <binding role="Event Title" >NYLive 4</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Still"  duration="00:00:15:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="528263770" >
+    <binding role="Billing Reference Code" >528263770</binding>
+    <binding role="ISCI" >TM18TV14DL</binding>
+    <binding role="Event Title" >TM18TV14DL</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="TiedStill"  duration="00:00:00:00"  relative-start-time="00:00:05:00" external-id="526487016" >
+    <binding role="Billing Reference Code" >526487016</binding>
+    <binding role="ISCI" >TB2999H</binding>
+    <binding role="Graphic Depth" >Background</binding>
+    <binding role="Event Title" >TB2999H</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="End Offset" >60</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Commercial Pod"  duration="00:04:32:00" overrun="00:00:00:00"  external-id="-10008" >
+    <binding role="Billing Reference Code" >-10008</binding>
+    <binding role="Event Title" >Break 4</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Allocation"  duration="00:02:00:00" overrun="00:00:00:00"  external-id="NAT-0" >
+    <binding role="Billing Reference Code" >NAT-0</binding>
+    <binding role="Event Title" >NAT</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="465439222" >
+    <binding role="Billing Reference Code" >465439222</binding>
+    <binding role="ISCI" >JTMO21T0097H</binding>
+    <binding role="Product Name" >Postpaid (TPOS)</binding>
+    <binding role="Event Title" >JTMO21T0097H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >T-Mobile USA</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="520196088" >
+    <binding role="Billing Reference Code" >520196088</binding>
+    <binding role="ISCI" >KLCZ1019000H</binding>
+    <binding role="Product Name" >Cheez-It (HCHZ)</binding>
+    <binding role="Event Title" >KLCZ1019000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Kellogg Company</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="516077057" >
+    <binding role="Billing Reference Code" >516077057</binding>
+    <binding role="ISCI" >CIXL1003000H</binding>
+    <binding role="Product Name" >Modelo Chelada</binding>
+    <binding role="Event Title" >CIXL1003000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Crown Imports, LLC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="467393452" >
+    <binding role="Billing Reference Code" >467393452</binding>
+    <binding role="ISCI" >#</binding>
+    <binding role="Product Name" >G47</binding>
+    <binding role="Event Title" >#</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Procter &amp; Gamble</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="470002409" >
+    <binding role="Billing Reference Code" >470002409</binding>
+    <binding role="ISCI" >OQHM0271000H</binding>
+    <binding role="Product Name" >MAS -</binding>
+    <binding role="Event Title" >OQHM0271000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >State Farm</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-0" >
+    <binding role="Billing Reference Code" >BL-0</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142685" >
+    <binding role="Billing Reference Code" >527142685</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142685" >
+    <binding role="Billing Reference Code" >GPI-527142685</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:08:00" external-id="527142688" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142688</binding>
+    <binding role="Event Title" >01</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >01</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:02:00:00" overrun="00:00:00:00"  external-id="LOC-0" >
+    <binding role="Billing Reference Code" >LOC-0</binding>
+    <binding role="Event Title" >LOC</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="528212851" >
+    <binding role="Billing Reference Code" >528212851</binding>
+    <binding role="ISCI" >SB821415215H</binding>
+    <binding role="Product Name" >Rotorazer Spanish</binding>
+    <binding role="Event Title" >SB821415215H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Ideal Living Media, LLC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="527727926" >
+    <binding role="Billing Reference Code" >527727926</binding>
+    <binding role="ISCI" >CUSYHA15SLH</binding>
+    <binding role="Product Name" >Curology</binding>
+    <binding role="Event Title" >CUSYHA15SLH</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Curology, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="517751783" >
+    <binding role="Billing Reference Code" >517751783</binding>
+    <binding role="ISCI" >LD421BA1930H</binding>
+    <binding role="Product Name" >PI/WC (Est 1891)</binding>
+    <binding role="Event Title" >LD421BA1930H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Los Defensores, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="527378189" >
+    <binding role="Billing Reference Code" >527378189</binding>
+    <binding role="ISCI" >AJA010XX398H</binding>
+    <binding role="Product Name" >Carparts.com TV (21SE)</binding>
+    <binding role="Event Title" >AJA010XX398H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >U.S. Auto Parts Network, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-1" >
+    <binding role="Billing Reference Code" >BL-1</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142700" >
+    <binding role="Billing Reference Code" >527142700</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142700" >
+    <binding role="Billing Reference Code" >GPI-527142700</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:01:00:03" external-id="527142703" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142703</binding>
+    <binding role="Event Title" >02</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >02</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-GPIGRP" >
+    <binding role="Billing Reference Code" >526486743-GPIGRP</binding>
+    <binding role="GPI Group Name" >Break Start/Stop</binding>
+    <binding role="Event Title" >Break Start/Stop</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Break Start/Stop</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-8" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-8</binding>
+    <binding role="Event Title" >BreakStart</binding>
+    <binding role="GPI Resource Name" >BreakStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-9" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-9</binding>
+    <binding role="Event Title" >BreakStop</binding>
+    <binding role="GPI Resource Name" >BreakStop</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    <event class-name="NYLive"  duration="00:07:00:00" overrun="00:00:10:00"  external-id="-10009" >
+    <binding role="Billing Reference Code" >-10009</binding>
+    <binding role="Event Title" >NYLive 5</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Still"  duration="00:00:15:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="528263770" >
+    <binding role="Billing Reference Code" >528263770</binding>
+    <binding role="ISCI" >TM18TV14DL</binding>
+    <binding role="Event Title" >TM18TV14DL</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="TiedStill"  duration="00:00:00:00"  relative-start-time="00:00:05:00" external-id="526487016" >
+    <binding role="Billing Reference Code" >526487016</binding>
+    <binding role="ISCI" >TB2999H</binding>
+    <binding role="Graphic Depth" >Background</binding>
+    <binding role="Event Title" >TB2999H</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="End Offset" >60</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Commercial Pod"  duration="00:04:32:00" overrun="00:00:00:00"  external-id="-10010" >
+    <binding role="Billing Reference Code" >-10010</binding>
+    <binding role="Event Title" >Break 5</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Allocation"  duration="00:03:00:00" overrun="00:00:00:00"  external-id="NAT-0" >
+    <binding role="Billing Reference Code" >NAT-0</binding>
+    <binding role="Event Title" >NAT</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="518680271" >
+    <binding role="Billing Reference Code" >518680271</binding>
+    <binding role="ISCI" >GOOG4993000H</binding>
+    <binding role="Product Name" >Google Pixel</binding>
+    <binding role="Event Title" >GOOG4993000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Google, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="515279404" >
+    <binding role="Billing Reference Code" >515279404</binding>
+    <binding role="ISCI" >JSRA220681H</binding>
+    <binding role="Product Name" >Raid (RPF)</binding>
+    <binding role="Event Title" >JSRA220681H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >SC Johnson</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="512087000" >
+    <binding role="Billing Reference Code" >512087000</binding>
+    <binding role="ISCI" >DYHH1347000H</binding>
+    <binding role="Product Name" >HISP - Dunkin&apos; Donuts</binding>
+    <binding role="Event Title" >DYHH1347000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Dunkin&apos; Donuts</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="516023389" >
+    <binding role="Billing Reference Code" >516023389</binding>
+    <binding role="ISCI" >CIZP1002000H</binding>
+    <binding role="Product Name" >Victoria -</binding>
+    <binding role="Event Title" >CIZP1002000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Crown Imports, LLC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="510904194" >
+    <binding role="Billing Reference Code" >510904194</binding>
+    <binding role="ISCI" >JJTE0174000H</binding>
+    <binding role="Product Name" >Tylenol SCC (EST)</binding>
+    <binding role="Event Title" >JJTE0174000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Johnson &amp; Johnson</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="520914837" >
+    <binding role="Billing Reference Code" >520914837</binding>
+    <binding role="ISCI" >1217DL0414H</binding>
+    <binding role="Product Name" >Dish Latino DL Umbrella (UB21) (Est 4823)</binding>
+    <binding role="Event Title" >1217DL0414H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Dish Network (DR)</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRFI</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="517994497" >
+    <binding role="Billing Reference Code" >517994497</binding>
+    <binding role="ISCI" >GIKR00811H</binding>
+    <binding role="Product Name" >HHS</binding>
+    <binding role="Event Title" >GIKR00811H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >General Mills</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="518685471" >
+    <binding role="Billing Reference Code" >518685471</binding>
+    <binding role="ISCI" >GOOG4993000H</binding>
+    <binding role="Product Name" >Google Pixel</binding>
+    <binding role="Event Title" >GOOG4993000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Google, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="516077060" >
+    <binding role="Billing Reference Code" >516077060</binding>
+    <binding role="ISCI" >CIXL1003000H</binding>
+    <binding role="Product Name" >Modelo Chelada</binding>
+    <binding role="Event Title" >CIXL1003000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Crown Imports, LLC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="517707176" >
+    <binding role="Billing Reference Code" >517707176</binding>
+    <binding role="ISCI" >NENI1003000H</binding>
+    <binding role="Product Name" >Nido (ND1)</binding>
+    <binding role="Event Title" >NENI1003000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Nestle</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="516372896" >
+    <binding role="Billing Reference Code" >516372896</binding>
+    <binding role="ISCI" >YPDT205600NH</binding>
+    <binding role="Product Name" >SAND H</binding>
+    <binding role="Event Title" >YPDT205600NH</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Popeyes Louisiana Kitchen</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-0" >
+    <binding role="Billing Reference Code" >BL-0</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142715" >
+    <binding role="Billing Reference Code" >527142715</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142715" >
+    <binding role="Billing Reference Code" >GPI-527142715</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:08:00" external-id="527142718" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142718</binding>
+    <binding role="Event Title" >01</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >01</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="LOC-0" >
+    <binding role="Billing Reference Code" >LOC-0</binding>
+    <binding role="Event Title" >LOC</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="523652128" >
+    <binding role="Billing Reference Code" >523652128</binding>
+    <binding role="ISCI" >210087ZH</binding>
+    <binding role="Product Name" >Freeway Insurance</binding>
+    <binding role="Event Title" >210087ZH</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Freeway Insurance Services, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-1" >
+    <binding role="Billing Reference Code" >BL-1</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142727" >
+    <binding role="Billing Reference Code" >527142727</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142727" >
+    <binding role="Billing Reference Code" >GPI-527142727</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="527142730" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142730</binding>
+    <binding role="Event Title" >02</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >02</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="End Offset" >3</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-GPIGRP" >
+    <binding role="Billing Reference Code" >526486743-GPIGRP</binding>
+    <binding role="GPI Group Name" >Break Start/Stop</binding>
+    <binding role="Event Title" >Break Start/Stop</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Break Start/Stop</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-10" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-10</binding>
+    <binding role="Event Title" >BreakStart</binding>
+    <binding role="GPI Resource Name" >BreakStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-11" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-11</binding>
+    <binding role="Event Title" >BreakStop</binding>
+    <binding role="GPI Resource Name" >BreakStop</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    <event class-name="NYLive"  duration="00:07:00:00" overrun="00:00:10:00"  external-id="-10011" >
+    <binding role="Billing Reference Code" >-10011</binding>
+    <binding role="Event Title" >NYLive 6</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Still"  duration="00:00:15:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="528263770" >
+    <binding role="Billing Reference Code" >528263770</binding>
+    <binding role="ISCI" >TM18TV14DL</binding>
+    <binding role="Event Title" >TM18TV14DL</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="TiedStill"  duration="00:00:00:00"  relative-start-time="00:00:05:00" external-id="526487016" >
+    <binding role="Billing Reference Code" >526487016</binding>
+    <binding role="ISCI" >TB2999H</binding>
+    <binding role="Graphic Depth" >Background</binding>
+    <binding role="Event Title" >TB2999H</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="End Offset" >60</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Commercial Pod"  duration="00:04:27:00" overrun="00:00:00:00"  external-id="-10012" >
+    <binding role="Billing Reference Code" >-10012</binding>
+    <binding role="Event Title" >Break 6</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Allocation"  duration="00:02:30:00" overrun="00:00:00:00"  external-id="NAT-0" >
+    <binding role="Billing Reference Code" >NAT-0</binding>
+    <binding role="Event Title" >NAT</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="467647534" >
+    <binding role="Billing Reference Code" >467647534</binding>
+    <binding role="ISCI" >#</binding>
+    <binding role="Product Name" >Malignant Pre-Opening</binding>
+    <binding role="Event Title" >#</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Warner Brothers</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="518677969" >
+    <binding role="Billing Reference Code" >518677969</binding>
+    <binding role="ISCI" >GOOG4993000H</binding>
+    <binding role="Product Name" >Google Pixel</binding>
+    <binding role="Event Title" >GOOG4993000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Google, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="515740476" >
+    <binding role="Billing Reference Code" >515740476</binding>
+    <binding role="ISCI" >KOCZT152401H</binding>
+    <binding role="Product Name" >CZKZ</binding>
+    <binding role="Event Title" >KOCZT152401H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Coca-Cola Company</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="518677970" >
+    <binding role="Billing Reference Code" >518677970</binding>
+    <binding role="ISCI" >GOOG4993000H</binding>
+    <binding role="Product Name" >Google Pixel</binding>
+    <binding role="Event Title" >GOOG4993000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Google, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="512087029" >
+    <binding role="Billing Reference Code" >512087029</binding>
+    <binding role="ISCI" >DYHH1347000H</binding>
+    <binding role="Product Name" >HISP - Dunkin&apos; Donuts</binding>
+    <binding role="Event Title" >DYHH1347000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Dunkin&apos; Donuts</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="518678352" >
+    <binding role="Billing Reference Code" >518678352</binding>
+    <binding role="ISCI" >GOOG4993000H</binding>
+    <binding role="Product Name" >Google Pixel</binding>
+    <binding role="Event Title" >GOOG4993000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Google, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="517994717" >
+    <binding role="Billing Reference Code" >517994717</binding>
+    <binding role="ISCI" >GIDV19511H</binding>
+    <binding role="Product Name" >CTH</binding>
+    <binding role="Event Title" >GIDV19511H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >General Mills</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="511556087" >
+    <binding role="Billing Reference Code" >511556087</binding>
+    <binding role="ISCI" >CLCH0206000H</binding>
+    <binding role="Product Name" >Masterbrand - Colgate-Palmolive Company</binding>
+    <binding role="Event Title" >CLCH0206000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Colgate-Palmolive Company</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="527599084" >
+    <binding role="Billing Reference Code" >527599084</binding>
+    <binding role="ISCI" >AVTR0236000H</binding>
+    <binding role="Product Name" >(TRE) Tresemme</binding>
+    <binding role="Event Title" >AVTR0236000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Unilever</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:25:00" overrun="00:00:00:00"  external-id="NP-0" >
+    <binding role="Billing Reference Code" >NP-0</binding>
+    <binding role="Event Title" >NP</binding>
+    <binding role="Event Process Type" >PRO</binding>
+    <binding role="Event Code" >NP</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:25:00" overrun="00:00:00:00"  external-id="528584149" >
+    <binding role="Billing Reference Code" >528584149</binding>
+    <binding role="ISCI" >TTN8PE091021H</binding>
+    <binding role="Product Name" >DO NOT COVER TLMD  (04) NEWSTTN8PE  FRI 08P</binding>
+    <binding role="Event Title" >TTN8PE091021H</binding>
+    <binding role="Event Process Type" >PRO</binding>
+    <binding role="Alt_ISCI" >TRLG477634H</binding>
+    <binding role="Client Name" >DO NOT COVER TLMD  (04) NEWSTTN8PE  FRI 08P</binding>
+    <binding role="Event Code" >NP</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-0" >
+    <binding role="Billing Reference Code" >BL-0</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142748" >
+    <binding role="Billing Reference Code" >527142748</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142748" >
+    <binding role="Billing Reference Code" >GPI-527142748</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:08:00" external-id="527142751" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142751</binding>
+    <binding role="Event Title" >01</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >01</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:01:30:00" overrun="00:00:00:00"  external-id="LOC-0" >
+    <binding role="Billing Reference Code" >LOC-0</binding>
+    <binding role="Event Title" >LOC</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="517751790" >
+    <binding role="Billing Reference Code" >517751790</binding>
+    <binding role="ISCI" >LD421BA1930H</binding>
+    <binding role="Product Name" >PI/WC (Est 1891)</binding>
+    <binding role="Event Title" >LD421BA1930H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Los Defensores, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="521649121" >
+    <binding role="Billing Reference Code" >521649121</binding>
+    <binding role="ISCI" >TSLWAR308770</binding>
+    <binding role="Product Name" >Travel (Call Now Spanish 30)</binding>
+    <binding role="Event Title" >TSLWAR308770</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Low Cost Airlines</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="527727919" >
+    <binding role="Billing Reference Code" >527727919</binding>
+    <binding role="ISCI" >CUSYHA15SLH</binding>
+    <binding role="Product Name" >Curology</binding>
+    <binding role="Event Title" >CUSYHA15SLH</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Curology, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="519466989" >
+    <binding role="Billing Reference Code" >519466989</binding>
+    <binding role="ISCI" >#</binding>
+    <binding role="Product Name" >Los taxes de America</binding>
+    <binding role="Event Title" >#</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Cornerstone Media Group</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >PILO</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-1" >
+    <binding role="Billing Reference Code" >BL-1</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142763" >
+    <binding role="Billing Reference Code" >527142763</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142763" >
+    <binding role="Billing Reference Code" >GPI-527142763</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:30:03" external-id="527142766" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142766</binding>
+    <binding role="Event Title" >02</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >02</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-GPIGRP" >
+    <binding role="Billing Reference Code" >526486743-GPIGRP</binding>
+    <binding role="GPI Group Name" >Break Start/Stop</binding>
+    <binding role="Event Title" >Break Start/Stop</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Break Start/Stop</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-12" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-12</binding>
+    <binding role="Event Title" >BreakStart</binding>
+    <binding role="GPI Resource Name" >BreakStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-13" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-13</binding>
+    <binding role="Event Title" >BreakStop</binding>
+    <binding role="GPI Resource Name" >BreakStop</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    <event class-name="NYLive"  duration="00:05:30:00" overrun="00:00:10:00"  external-id="-10013" >
+    <binding role="Billing Reference Code" >-10013</binding>
+    <binding role="Event Title" >NYLive 7</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Still"  duration="00:00:15:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="528263770" >
+    <binding role="Billing Reference Code" >528263770</binding>
+    <binding role="ISCI" >TM18TV14DL</binding>
+    <binding role="Event Title" >TM18TV14DL</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="TiedStill"  duration="00:00:00:00"  relative-start-time="00:00:05:00" external-id="526487016" >
+    <binding role="Billing Reference Code" >526487016</binding>
+    <binding role="ISCI" >TB2999H</binding>
+    <binding role="Graphic Depth" >Background</binding>
+    <binding role="Event Title" >TB2999H</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="End Offset" >60</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Commercial Pod"  duration="00:04:47:00" overrun="00:00:00:00"  external-id="-10014" >
+    <binding role="Billing Reference Code" >-10014</binding>
+    <binding role="Event Title" >Break 7</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Allocation"  duration="00:03:00:00" overrun="00:00:00:00"  external-id="NAT-0" >
+    <binding role="Billing Reference Code" >NAT-0</binding>
+    <binding role="Event Title" >NAT</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="465439224" >
+    <binding role="Billing Reference Code" >465439224</binding>
+    <binding role="ISCI" >JTMO21T0097H</binding>
+    <binding role="Product Name" >Postpaid (TPOS)</binding>
+    <binding role="Event Title" >JTMO21T0097H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >T-Mobile USA</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="527599085" >
+    <binding role="Billing Reference Code" >527599085</binding>
+    <binding role="ISCI" >AVTR0236000H</binding>
+    <binding role="Product Name" >(TRE) Tresemme</binding>
+    <binding role="Event Title" >AVTR0236000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Unilever</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="469962056" >
+    <binding role="Billing Reference Code" >469962056</binding>
+    <binding role="ISCI" >4AMD1781000H</binding>
+    <binding role="Product Name" >Barriers/Pricing (EFU)</binding>
+    <binding role="Event Title" >4AMD1781000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Amazon.com</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="518271715" >
+    <binding role="Billing Reference Code" >518271715</binding>
+    <binding role="ISCI" >MCDR708521TH</binding>
+    <binding role="Product Name" >Crispy Chicken Sandwich Pulse 1 Sept (CF2)</binding>
+    <binding role="Event Title" >MCDR708521TH</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >McDonald&apos;s Corp</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="512500817" >
+    <binding role="Billing Reference Code" >512500817</binding>
+    <binding role="ISCI" >GXSY0304000H</binding>
+    <binding role="Product Name" >Sensodyne (SENS)</binding>
+    <binding role="Event Title" >GXSY0304000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Glaxosmithkline Plc</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="517994716" >
+    <binding role="Billing Reference Code" >517994716</binding>
+    <binding role="ISCI" >GIDV19511H</binding>
+    <binding role="Product Name" >CTH</binding>
+    <binding role="Event Title" >GIDV19511H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >General Mills</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="516077058" >
+    <binding role="Billing Reference Code" >516077058</binding>
+    <binding role="ISCI" >CIXL1003000H</binding>
+    <binding role="Product Name" >Modelo Chelada</binding>
+    <binding role="Event Title" >CIXL1003000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Crown Imports, LLC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="518622267" >
+    <binding role="Billing Reference Code" >518622267</binding>
+    <binding role="ISCI" >OMLC1120000H</binding>
+    <binding role="Product Name" >O33</binding>
+    <binding role="Event Title" >OMLC1120000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >L&apos;Oreal USA</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="510904187" >
+    <binding role="Billing Reference Code" >510904187</binding>
+    <binding role="ISCI" >JJTE0174000H</binding>
+    <binding role="Product Name" >Tylenol SCC (EST)</binding>
+    <binding role="Event Title" >JJTE0174000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Johnson &amp; Johnson</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="527599090" >
+    <binding role="Billing Reference Code" >527599090</binding>
+    <binding role="ISCI" >LEPE0249000H</binding>
+    <binding role="Product Name" >Dove Men Deodorant (DFD)</binding>
+    <binding role="Event Title" >LEPE0249000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Unilever</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-0" >
+    <binding role="Billing Reference Code" >BL-0</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142778" >
+    <binding role="Billing Reference Code" >527142778</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142778" >
+    <binding role="Billing Reference Code" >GPI-527142778</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:08:00" external-id="527142781" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142781</binding>
+    <binding role="Event Title" >01</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >01</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="LOC-0" >
+    <binding role="Billing Reference Code" >LOC-0</binding>
+    <binding role="Event Title" >LOC</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="523652130" >
+    <binding role="Billing Reference Code" >523652130</binding>
+    <binding role="ISCI" >210087ZH</binding>
+    <binding role="Product Name" >Freeway Insurance</binding>
+    <binding role="Event Title" >210087ZH</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Freeway Insurance Services, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-1" >
+    <binding role="Billing Reference Code" >BL-1</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142790" >
+    <binding role="Billing Reference Code" >527142790</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142790" >
+    <binding role="Billing Reference Code" >GPI-527142790</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="527142793" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142793</binding>
+    <binding role="Event Title" >02</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >02</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="End Offset" >3</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-GPIGRP" >
+    <binding role="Billing Reference Code" >526486743-GPIGRP</binding>
+    <binding role="GPI Group Name" >Break Start/Stop</binding>
+    <binding role="Event Title" >Break Start/Stop</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Break Start/Stop</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-14" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-14</binding>
+    <binding role="Event Title" >BreakStart</binding>
+    <binding role="GPI Resource Name" >BreakStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-15" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-15</binding>
+    <binding role="Event Title" >BreakStop</binding>
+    <binding role="GPI Resource Name" >BreakStop</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    <event class-name="NYLive"  duration="00:05:30:00" overrun="00:00:10:00"  external-id="-10015" >
+    <binding role="Billing Reference Code" >-10015</binding>
+    <binding role="Event Title" >NYLive 8</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Still"  duration="00:00:15:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="528263770" >
+    <binding role="Billing Reference Code" >528263770</binding>
+    <binding role="ISCI" >TM18TV14DL</binding>
+    <binding role="Event Title" >TM18TV14DL</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="TiedStill"  duration="00:00:00:00"  relative-start-time="00:00:05:00" external-id="526487016" >
+    <binding role="Billing Reference Code" >526487016</binding>
+    <binding role="ISCI" >TB2999H</binding>
+    <binding role="Graphic Depth" >Background</binding>
+    <binding role="Event Title" >TB2999H</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="End Offset" >60</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Commercial Pod"  duration="00:04:17:00" overrun="00:00:00:00"  external-id="-10016" >
+    <binding role="Billing Reference Code" >-10016</binding>
+    <binding role="Event Title" >Break 8</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Allocation"  duration="00:02:30:00" overrun="00:00:00:00"  external-id="NAT-0" >
+    <binding role="Billing Reference Code" >NAT-0</binding>
+    <binding role="Event Title" >NAT</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="512087031" >
+    <binding role="Billing Reference Code" >512087031</binding>
+    <binding role="ISCI" >DYHH1347000H</binding>
+    <binding role="Product Name" >HISP - Dunkin&apos; Donuts</binding>
+    <binding role="Event Title" >DYHH1347000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Dunkin&apos; Donuts</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="528264651" >
+    <binding role="Billing Reference Code" >528264651</binding>
+    <binding role="ISCI" >QSEL1015H</binding>
+    <binding role="Product Name" >BRH - Sargento</binding>
+    <binding role="Event Title" >QSEL1015H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Sargento Foods, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="516338048" >
+    <binding role="Billing Reference Code" >516338048</binding>
+    <binding role="ISCI" >#</binding>
+    <binding role="Product Name" >NCC -</binding>
+    <binding role="Event Title" >#</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Red Bull</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="516997644" >
+    <binding role="Billing Reference Code" >516997644</binding>
+    <binding role="ISCI" >CCCL0112000H</binding>
+    <binding role="Product Name" >CL32</binding>
+    <binding role="Event Title" >CCCL0112000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Coty, INC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="520914840" >
+    <binding role="Billing Reference Code" >520914840</binding>
+    <binding role="ISCI" >1217DL0414H</binding>
+    <binding role="Product Name" >Dish Latino DL Umbrella (UB21) (Est 4823)</binding>
+    <binding role="Event Title" >1217DL0414H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Dish Network (DR)</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRFI</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="516023386" >
+    <binding role="Billing Reference Code" >516023386</binding>
+    <binding role="ISCI" >CIZP1004000H</binding>
+    <binding role="Product Name" >Victoria -</binding>
+    <binding role="Event Title" >CIZP1004000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Crown Imports, LLC</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="520196146" >
+    <binding role="Billing Reference Code" >520196146</binding>
+    <binding role="ISCI" >KLSF0890000H</binding>
+    <binding role="Product Name" >Frosted Flakes (HFF)</binding>
+    <binding role="Event Title" >KLSF0890000H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Kellogg Company</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="527599092" >
+    <binding role="Billing Reference Code" >527599092</binding>
+    <binding role="ISCI" >#</binding>
+    <binding role="Product Name" >Dove Men Deodorant (DFD)</binding>
+    <binding role="Event Title" >#</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Unilever</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="516372897" >
+    <binding role="Billing Reference Code" >516372897</binding>
+    <binding role="ISCI" >YPDT208300NH</binding>
+    <binding role="Product Name" >NUGGS H</binding>
+    <binding role="Event Title" >YPDT208300NH</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Popeyes Louisiana Kitchen</binding>
+    <binding role="Event Code" >NAT</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >NATL</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-0" >
+    <binding role="Billing Reference Code" >BL-0</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142811" >
+    <binding role="Billing Reference Code" >527142811</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142811" >
+    <binding role="Billing Reference Code" >GPI-527142811</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:08:00" external-id="527142814" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142814</binding>
+    <binding role="Event Title" >01</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >01</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:01:00:00" overrun="00:00:00:00"  external-id="LOC-0" >
+    <binding role="Billing Reference Code" >LOC-0</binding>
+    <binding role="Event Title" >LOC</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="517751765" >
+    <binding role="Billing Reference Code" >517751765</binding>
+    <binding role="ISCI" >LD421BP1930H</binding>
+    <binding role="Product Name" >PI/WC (Est 1891)</binding>
+    <binding role="Event Title" >LD421BP1930H</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Los Defensores, INC</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    <event class-name="Short Form Play"  duration="00:00:30:00" overrun="00:00:00:00"  external-id="521649105" >
+    <binding role="Billing Reference Code" >521649105</binding>
+    <binding role="ISCI" >TSLWAR308770</binding>
+    <binding role="Product Name" >Travel (Call Now Spanish 30)</binding>
+    <binding role="Event Title" >TSLWAR308770</binding>
+    <binding role="Event Process Type" >COM</binding>
+    <binding role="Client Name" >Low Cost Airlines</binding>
+    <binding role="Event Code" >LOC</binding>
+    <binding role="Network" >1</binding>
+    <binding role="Sales Priority" >DRLO</binding>
+    </event>
+    </event>
+    <event class-name="Allocation"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="BL-1" >
+    <binding role="Billing Reference Code" >BL-1</binding>
+    <binding role="Event Title" >BL</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Black"  duration="00:00:01:00" overrun="00:00:00:00"  external-id="527142826" >
+    <binding role="Billing Reference Code" >527142826</binding>
+    <binding role="Event Title" >BLACK</binding>
+    <binding role="Event Process Type" >N</binding>
+    <binding role="Event Code" >BL</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="GPI-527142826" >
+    <binding role="Billing Reference Code" >GPI-527142826</binding>
+    <binding role="Event Title" >GPI Group</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="-00:00:10:03" external-id="527142829" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >527142829</binding>
+    <binding role="Event Title" >02</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >02</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-GPIGRP" >
+    <binding role="Billing Reference Code" >526486743-GPIGRP</binding>
+    <binding role="GPI Group Name" >Break Start/Stop</binding>
+    <binding role="Event Title" >Break Start/Stop</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Break Start/Stop</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-16" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-16</binding>
+    <binding role="Event Title" >BreakStart</binding>
+    <binding role="GPI Resource Name" >BreakStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-17" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-17</binding>
+    <binding role="Event Title" >BreakStop</binding>
+    <binding role="GPI Resource Name" >BreakStop</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    <event class-name="NYLive"  duration="00:05:30:00" overrun="00:00:10:00"  external-id="-10017" >
+    <binding role="Billing Reference Code" >-10017</binding>
+    <binding role="Event Title" >NYLive 9</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="Still"  duration="00:00:15:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="528263770" >
+    <binding role="Billing Reference Code" >528263770</binding>
+    <binding role="ISCI" >TM18TV14DL</binding>
+    <binding role="Event Title" >TM18TV14DL</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="TiedStill"  duration="00:00:00:00"  relative-start-time="00:00:05:00" external-id="526487016" >
+    <binding role="Billing Reference Code" >526487016</binding>
+    <binding role="ISCI" >TB2999H</binding>
+    <binding role="Graphic Depth" >Background</binding>
+    <binding role="Event Title" >TB2999H</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="End Offset" >60</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    <event class-name="Commercial Pod"  duration="00:00:15:00" overrun="00:00:00:00"  external-id="-10018" >
+    <binding role="Billing Reference Code" >-10018</binding>
+    <binding role="Event Title" >Break 9</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-GPIGRP" >
+    <binding role="Billing Reference Code" >526486743-GPIGRP</binding>
+    <binding role="GPI Group Name" >Break Start/Stop</binding>
+    <binding role="Event Title" >Break Start/Stop</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Break Start/Stop</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-18" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-18</binding>
+    <binding role="Event Title" >BreakStart</binding>
+    <binding role="GPI Resource Name" >BreakStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-19" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-19</binding>
+    <binding role="Event Title" >BreakStop</binding>
+    <binding role="GPI Resource Name" >BreakStop</binding>
+    <binding role="Offset From End" >Y</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+    </event>
+    <event class-name="GPIGroup"  duration="00:00:00:00"   external-id="526486743-PGMSTRT" >
+    <binding role="Billing Reference Code" >526486743-PGMSTRT</binding>
+    <binding role="GPI Group Name" >Program Start</binding>
+    <binding role="Event Title" >Program Start</binding>
+    <binding role="Event Process Type" >SH</binding>
+    <binding role="GPI Resource Name" >Program Start</binding>
+    <binding role="Event Code" >SH</binding>
+    <binding role="Network" >1</binding>
+    <event class-name="GPI"  duration="00:00:01:00" overrun="00:00:00:00" relative-start-time="00:00:00:00" external-id="GPIEVENT-1" >
+    <binding role="GPI Action Mode" >ON</binding>
+    <binding role="Billing Reference Code" >GPIEVENT-1</binding>
+    <binding role="Event Title" >ProgramStart</binding>
+    <binding role="GPI Resource Name" >ProgramStart</binding>
+    <binding role="Offset From End" >N</binding>
+    <binding role="Network" >1</binding>
+    </event>
+    </event>
+  </template>
+
+
+</webscheduler-update>
