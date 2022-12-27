@@ -11,7 +11,7 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-import com.ping23.util.AppProperties;
+import com.ping23.scratch.util.AppProperties;
 
 public class SendEmailMailtrap {
 
@@ -42,8 +42,8 @@ public class SendEmailMailtrap {
         properties.put("mail.smtp.ssl.trust", sslTrust);
 
         // authentication
-        final String username = AppProperties.getProperty("mailtrap.username");
-        final String password = AppProperties.getProperty("mailtrap.password");
+        final String username = AppProperties.DEFAULT.getProperty("mailtrap.username");
+        final String password = AppProperties.DEFAULT.getProperty("mailtrap.password");
         
         // Session
         Session session = Session.getInstance(properties, new Authenticator() {

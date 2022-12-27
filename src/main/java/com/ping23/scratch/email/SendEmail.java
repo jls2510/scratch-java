@@ -11,7 +11,7 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-import com.ping23.util.AppProperties;
+import com.ping23.scratch.util.AppProperties;
 
 public class SendEmail {
 
@@ -41,8 +41,8 @@ public class SendEmail {
       properties.put("mail.smtp.port", port);
       
       // authentication
-      final String username = AppProperties.getProperty("smtp.username");
-      final String password = AppProperties.getProperty("smtp.password");
+      final String username = AppProperties.DEFAULT.getProperty("smtp.username");
+      final String password = AppProperties.DEFAULT.getProperty("smtp.password");
       
       // Session
       Session session = Session.getInstance(properties, new Authenticator() {
