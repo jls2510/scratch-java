@@ -8,11 +8,14 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.net.HttpURLConnection;
+import javax.net.ssl.HttpsURLConnection;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
+
+import javax.net.ssl.SSLContext;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
@@ -100,8 +103,9 @@ public final class HTTPConnection {
         HTTPResponse response = null;
 
         try {
-            final URL url = new URL(endpoint);
-            final HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+
+            HttpURLConnection connection = HttpURLConnectionProvider.getHttpURLConnection(endpoint);
+
             connection.setRequestMethod(method);
             connection.setConnectTimeout(timeoutMilliseconds);
 

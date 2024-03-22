@@ -11,9 +11,12 @@ public class Example {
         
         HTTPConnection httpConnection = new HTTPConnection();
         
-        //String endpoint = "http://www.jlsfineart.com";
+        String endpoint = "http://www.jlsfineart.com";
         //String endpoint = "http://ping23.com";
-        String endpoint = "https://ping23.com/test";
+        //String endpoint = "https://ping23.com/test";
+        
+        // NOTE see code in HttpURLConnectionProvider for configuring connection to trust self-signed certificates
+        //String endpoint = "https://capella:81";
         
         String method = SupportedMethods.HTTP_GET.getName();
         

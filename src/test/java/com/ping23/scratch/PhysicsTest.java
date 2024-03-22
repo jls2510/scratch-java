@@ -1,11 +1,8 @@
 package com.ping23.scratch;
 
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.ping23.scratch.Physics;
 
 public class PhysicsTest {
 
